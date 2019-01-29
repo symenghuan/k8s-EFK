@@ -1,11 +1,11 @@
 # k8s-EFK 国内安装，持久化存储
 官网EFK基础配置
->>> https://github.com/kubernetes/kubernetes.git
+>> https://github.com/kubernetes/kubernetes.git
 
 由于github上得镜像Dockerfile和实际有出入，手动编译无法执行，还是通过官方的镜像进行操作，但国内无法下载，所以通过hub.docker.com上同步的Google镜像仓库进行下载：
 涉及镜像：
-es: mirrorgooglecontainers/elasticsearch:v6.3.0
-fluentd-es: mirrorgooglecontainers/fluentd-elasticsearch:v2.4.0
+>> es: mirrorgooglecontainers/elasticsearch:v6.3.0
+>> fluentd-es: mirrorgooglecontainers/fluentd-elasticsearch:v2.4.0
 
 ### 下面是官方yaml改动说明(namesapces不做过多说明，可自定义)
 ```
